@@ -1,4 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
+* {
+  font-family: "DM Sans", sans-serif;
+}
+.bg-primary-gradient {
+  background: linear-gradient(89.71deg, #f5bd4d 0.36%, #f89222 99.88%);
+}
+.bg-deep-dark {
+  background-color: #121414;
+  color: #fff;
+}
+.bg-gray-dark {
+  background-color: #171b1a;
+  color: #fff;
+}
+.bg-primary {
+  background-color: #f89222;
+}
+.text-primary {
+  color: #f89222;
+}
+
+.gradient-text {
+  background: linear-gradient(89.71deg, #f5bd4d 0.36%, #f89222 99.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.top-shadow{
+     box-shadow: 0 -1px 6px -2px rgba(255, 255, 255, 0.4)
+}
+
+
+
