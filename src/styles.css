@@ -34,6 +34,14 @@
 .top-shadow{
      box-shadow: 0 -1px 6px -2px rgba(255, 255, 255, 0.4)
 }
+.rotated-text {
+  display: inline-block;
+  white-space: wrap;
+ transform: rotate(90deg);
+}
+
+/* © design by themefisher developed by gethugothemes */
+
 
 
 

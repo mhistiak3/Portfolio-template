@@ -39,7 +39,7 @@
     <main class="w-full h-screen bg-gray-dark overflow-hidden">
       <!-- ===== Start Navbar ===== -->
       <nav class="w-full bg-deep-dark h-24 flex">
-        <div class="w-[90px]"> </div>
+        <div class="w-[90px]"></div>
         <div class="flex-1 mx-auto flex items-center h-full">
           <div
             class="w-4/12 border-r border-gray-700 h-full flex flex-col justify-center"
@@ -63,12 +63,12 @@
             </div>
           </div>
         </div>
-         <div class="w-[90px]"> </div>
+        <div class="w-[90px]"></div>
       </nav>
       <!-- ===== End Navbar ===== -->
-      <div class="w-full h-[calc(100vh-3rem)] flex">
-        <!-- Start Menu -->
-        <div class="w-[90px] relative">
+      <div class="w-full h-[calc(100vh-6rem)] flex">
+        <!-- ======= Start Menu ======= -->
+        <div class="w-[90px] h-full relative">
           <div
             class="h-full flex flex-col pt-12 items-center gap-y-12 absolute z-10 top-0 w-full"
           >
@@ -171,31 +171,46 @@
             <img
               src="./assets/element-1.png"
               alt="element"
-              class="w-full h-[550px] absolute bottom-0 right-0"
+              class="w-full h-[500px] absolute bottom-0 right-0"
             />
           </div>
         </div>
-        <!-- End Menu -->
+        <!-- =========== End Menu ========== -->
+
         <div class="flex-1 mx-auto h-full flex">
           <!-- ===== Sidebar Start ======== -->
           <div class="w-4/12 h-full flex flex-col">
-            <div class="bg-black w-full h-[calc(94%-70px)] flex justify-center items-center">
+            <div
+              class="bg-black w-full h-[calc(100%-70px)] flex justify-center items-center"
+            >
               <img src="./assets/profile.png" alt="element" class="w-[95%]" />
             </div>
-            <div class="bg-black w-full h-[70px] flex justify-center items-center gap-x-4 top-shadow">
-              <span class="bg-[#121414] opacity-95 w-8 h-8 rounded-full flex justify-center items-center">
+            <div
+              class="bg-black w-full h-[70px] flex justify-center items-center gap-x-4 top-shadow"
+            >
+              <span
+                class="bg-[#121414] opacity-95 w-8 h-8 rounded-full flex justify-center items-center"
+              >
                 <i class="fa fa-facebook"></i>
               </span>
-              <span class="bg-[#121414] opacity-95 w-8 h-8 rounded-full flex justify-center items-center">
+              <span
+                class="bg-[#121414] opacity-95 w-8 h-8 rounded-full flex justify-center items-center"
+              >
                 <i class="fa fa-instagram"></i>
               </span>
-              <span class="bg-[#121414] opacity-95 w-8 h-8 rounded-full flex justify-center items-center">
+              <span
+                class="bg-[#121414] opacity-95 w-8 h-8 rounded-full flex justify-center items-center"
+              >
                 <i class="fa fa-linkedin"></i>
               </span>
-              <span class="bg-[#121414] opacity-95 w-8 h-8 rounded-full flex justify-center items-center">
+              <span
+                class="bg-[#121414] opacity-95 w-8 h-8 rounded-full flex justify-center items-center"
+              >
                 <i class="fa fa-pinterest"></i>
               </span>
-              <span class="bg-[#121414] opacity-95 w-8 h-8 rounded-full flex justify-center items-center">
+              <span
+                class="bg-[#121414] opacity-95 w-8 h-8 rounded-full flex justify-center items-center"
+              >
                 <i class="fa fa-twitter"></i>
               </span>
             </div>
@@ -203,14 +218,64 @@
           <!-- ===== Sidebar End ======== -->
 
           <!-- ===== Main Content Start ===== -->
-          <div class="w-8/12 h-full overflow-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-            voluptatibus at exercitationem, explicabo repellat aliquid aliquam,
-            vitae numquam magnam quia inventore laudantium ab eaque possimus
-            dolore obcaecati doloremque! Hic, repudiandae?
+          <main class="w-8/12 h-full overflow-auto">
+            <!-- ========== Start Hero Section ============ -->
+            <section class="w-full h-[600px] p-12 ">
+              <span class="gradient-text font-semibold">INTRODUCTION</span>
+              <h1 class="text-5xl font-semibold leading-tight mb-4 mt-2">I'm a Creative Developer & UI/UX Design Expert</h1>
+              <b>24 years / Robert Smith / UK London</b>
+              <p class="mt-10 text-gray-300 leading-6">
+                Prolific, full stack web developer with a passion for metrics
+                and beating former "best-yets. Prototyped 25 new product
+                features per year for Flexor, Inc. Decreased rework by 22% and
+                costs by 15%. Consistently receive high user experience scores
+                for all web development projects, including a 55% increase for
+                Flexor, Inc. Passionate about building world class web
+                applications. One of my sites received a 2020 Webby for Best
+                Navigation and Structure.
+              </p>
+              <button class="mt-8 bg-primary-gradient rounded-full px-5 py-2  flex justify-center items-center gap-2">Download CV <i class="fa fa-download"></i></button>
+            </section>
+            <!-- ========== End Hero Section ============ -->
+
+            <!-- ========== Start Resume Section ============ -->
+            <!-- ========== End Resume Section ============ -->
+          </main>
+          <!-- ===== Main Content Start ===== -->
+        </div>
+        <!-- ======= Start Copyright text ======== -->
+        <div class="w-[90px] h-full relative">
+          <div
+            class="flex flex-col justify-between items-center absolute z-10 top-0 w-full h-[600px]"
+          >
+            <p
+              class="transform rotate-90 whitespace-nowrap text-gray-500 text-sm absolute top-60 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            >
+              © Design by themefisher developed by gethugothemes
+            </p>
+
+            <div class="flex gap-4 flex-col absolute bottom-10">
+              <span
+                class="bg-gray-500 opacity-95 w-6 h-6 rounded-full flex justify-center items-center text-xs"
+              >
+                Fr
+              </span>
+              <span
+                class="bg-primary opacity-95 w-6 h-6 rounded-full flex justify-center items-center text-xs"
+              >
+                En
+              </span>
+            </div>
+          </div>
+          <div class="w-full">
+            <img
+              src="./assets/element-1.png"
+              alt="element"
+              class="w-full h-[500px] absolute bottom-0 right-0 scale-x-[-1]"
+            />
           </div>
         </div>
-        <div class="w-[90px] h-full"></div>
+        <!-- ======= End Copyright text ======== -->
       </div>
     </main>
   </body>
