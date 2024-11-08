@@ -10,6 +10,10 @@
 html {
   scroll-behavior: smooth;
 }
+img {
+  width: 100%;
+}
+
 .bg-primary-gradient {
   background: linear-gradient(89.71deg, #f5bd4de7 0.36%, #f89222 99.88%);
 }
