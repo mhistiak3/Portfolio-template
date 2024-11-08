@@ -17,14 +17,14 @@
   background-color: #171b1a;
   color: #fff;
 }
-.bg-light-gray{
+.bg-light-gray {
   background-color: rgba(39, 39, 39, 0.687);
 }
 .bg-primary {
   background-color: #f89222;
 }
-.bg-primary-dark{
-  background-color: #F892224D;
+.bg-primary-dark {
+  background-color: #f892224d;
 }
 .text-primary {
   color: #f89222;
@@ -37,27 +37,45 @@
   background-clip: text;
   color: transparent;
 }
-.top-shadow{
-     box-shadow: 0 -1px 6px -2px rgba(255, 255, 255, 0.4)
+.top-shadow {
+  box-shadow: 0 -1px 6px -2px rgba(255, 255, 255, 0.4);
 }
 .rotated-text {
   display: inline-block;
   white-space: wrap;
- transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
-.active_project_bar{
-   background: linear-gradient(89.71deg, #f5bd4d 0.36%, #f89222 99.88%);
+.active_project_bar {
+  background: linear-gradient(89.71deg, #f5bd4d 0.36%, #f89222 99.88%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
   border-bottom: 4px solid #f89222;
 }
-.project_bar_shadow{
-  box-shadow: 0 1px 8px 8px rgba(255, 255, 255, 0.1)
+.project_bar_shadow {
+  box-shadow: 0 1px 8px 8px rgba(255, 255, 255, 0.1);
+}
+.blog-btn {
+  position: relative;
 }
 
-
-
-
+.blog-btn::before {
+ background-color: #f89222;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 12px;
+  width: 30px;
+}
+.blog-btn::after {
+ background-color: #f89222;
+  content: "";
+  height: 1px;
+  right: 0;
+  position: absolute;
+  top: 12px;
+  width: 30px;
+}

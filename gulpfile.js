@@ -12,7 +12,7 @@ function buildStyles() {
 }
 
 function watchFiles() {
-  gulp.watch("src/*.css", buildStyles);
+  gulp.watch("src/styles.css", buildStyles);
   gulp.watch("src/*.html", buildStyles);
 }
 
