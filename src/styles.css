@@ -7,7 +7,7 @@
   font-family: "DM Sans", sans-serif;
 }
 .bg-primary-gradient {
-  background: linear-gradient(89.71deg, #f5bd4d 0.36%, #f89222 99.88%);
+  background: linear-gradient(89.71deg, #f5bd4de7 0.36%, #f89222 99.88%);
 }
 .bg-deep-dark {
   background-color: #121414;
@@ -17,8 +17,14 @@
   background-color: #171b1a;
   color: #fff;
 }
+.bg-light-gray{
+  background-color: rgba(39, 39, 39, 0.687);
+}
 .bg-primary {
   background-color: #f89222;
+}
+.bg-primary-dark{
+  background-color: #F892224D;
 }
 .text-primary {
   color: #f89222;
@@ -40,7 +46,17 @@
  transform: rotate(90deg);
 }
 
-/* © design by themefisher developed by gethugothemes */
+.active_project_bar{
+   background: linear-gradient(89.71deg, #f5bd4d 0.36%, #f89222 99.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  border-bottom: 4px solid #f89222;
+}
+.project_bar_shadow{
+  box-shadow: 0 1px 8px 8px rgba(255, 255, 255, 0.1)
+}
 
 
 
