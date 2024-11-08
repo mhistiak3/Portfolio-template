@@ -3,6 +3,11 @@
 
 This guide will walk you through how to set up and run a simple Gulp project that compiles and processes Tailwind CSS.
 
+
+
+## Website Demo:
+[https://portfolio-template-ia.netlify.app/](https://portfolio-template-ia.netlify.app/)
+
 ## Steps to Run the Project
 
 ### 1. Install Node.js
@@ -60,5 +65,3 @@ Once the task is running, check the `src/css/` folder for the compiled `styles.c
 - If you want to make changes to your styles, edit `src/css/styles.css`.
 - If you want to customize Tailwind (e.g., change colors, fonts), you can modify the `tailwind.config.js` file (if you created one).
 
-### 8. Stop the Task
-To stop the Gulp task, press `Ctrl + C` in the terminal.
