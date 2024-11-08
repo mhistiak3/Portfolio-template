@@ -38,44 +38,50 @@
   <body>
     <main class="w-full h-screen bg-gray-dark overflow-hidden">
       <!-- ===== Start Navbar ===== -->
-      <nav class="w-full bg-deep-dark h-24 flex">
-        <div class="w-[90px]"></div>
-        <div class="flex-1 mx-auto flex items-center h-full">
+      <nav class="w-full bg-deep-dark h-20 sm:h-24 flex px-4 md:px-0">
+        <div class="w-[90px] hidden md:block"></div>
+        <div
+          class="flex-1 mx-auto flex items-center h-full justify-between md:justify-stretch"
+        >
           <div
-            class="w-4/12 border-r border-gray-700 h-full flex flex-col justify-center"
+            class="md:w-4/12 md:border-r md:border-gray-700 h-full flex flex-col justify-center"
           >
-            <h3 class="font-bold text-3xl">
+            <h3 class="font-bold text-xl md:text-3xl">
               Daryl <span class="text-primary">Smith</span>
             </h3>
-            <p class="font-light text-gray-100">UI/UX designer</p>
+            <p class="font-light text-gray-100 text-xs md:text-base">
+              UI/UX designer
+            </p>
           </div>
-          <div class="w-8/12 flex justify-between items-center">
-            <div class="flex items-center ms-10 gap-3">
-              <img src="./assets/home-icon.png" alt="home" />
+          <div class="md:w-8/12 flex justify-between items-center">
+            <div class="md:flex items-center ms-10 gap-3 hidden">
+              <img src="./assets/home-icon.png" alt="home" class="w-full" />
               <h4 class="text-2xl font-bold">Home</h4>
             </div>
             <div
               class="bg-primary-gradient rounded-full p-[1px] flex justify-center items-center"
             >
-              <div class="bg-deep-dark px-4 py-2 rounded-full font-bold">
-                <p class="gradient-text">Talk To Me</p>
-              </div>
+              <a
+                href="/"
+                class="bg-deep-dark px-3 py-2 md:px-4 rounded-full font-bold cursor-pointer"
+              >
+                <p class="gradient-text text-sm md:text-base">Talk To Me</p>
+              </a>
             </div>
           </div>
         </div>
-        <div class="w-[90px]"></div>
+        <div class="w-[90px] hidden md:block"></div>
       </nav>
       <!-- ===== End Navbar ===== -->
       <div class="w-full h-[calc(100vh-6rem)] flex">
         <!-- ======= Start Menu ======= -->
-        <div class="w-[90px] h-full relative">
+        <div class="w-[50px] sm:w-[90px] h-full relative">
           <div
             class="h-full flex flex-col pt-12 items-center gap-y-12 absolute z-10 top-0 w-full"
           >
             <a href="/">
               <svg
-                width="32"
-                height="32"
+               class="w-6 h-6 sm:w-8 sm:h-8"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -102,8 +108,7 @@
 
             <a href="">
               <svg
-                width="32"
-                height="32"
+             class="w-6 h-6 sm:w-8 sm:h-8"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -120,8 +125,7 @@
             </a>
             <a href="">
               <svg
-                width="32"
-                height="32"
+              class="w-6 h-6 sm:w-8 sm:h-8"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -136,8 +140,7 @@
             </a>
             <a href="">
               <svg
-                width="32"
-                height="32"
+              class="w-6 h-6 sm:w-8 sm:h-8"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -152,8 +155,7 @@
             </a>
             <a href="">
               <svg
-                width="32"
-                height="32"
+               class="w-6 h-6 sm:w-8 sm:h-8"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -177,13 +179,19 @@
         </div>
         <!-- =========== End Menu ========== -->
 
-        <div class="flex-1 mx-auto h-full flex">
+        <div
+          class="flex-1 mx-auto h-full flex flex-col lg:flex-row overflow-y-auto"
+        >
           <!-- ===== Sidebar Start ======== -->
-          <div class="w-4/12 h-full flex flex-col">
+          <div class="w-full lg:w-4/12 h-full flex flex-col">
             <div
               class="bg-black w-full h-[calc(100%-70px)] flex justify-center items-center"
             >
-              <img src="./assets/profile.png" alt="element" class="w-[95%]" />
+              <img
+                src="./assets/profile.png"
+                alt="element"
+                class="lg:w-[95%]"
+              />
             </div>
             <div
               class="bg-black w-full h-[70px] flex justify-center items-center gap-x-4 top-shadow"
@@ -218,11 +226,11 @@
           <!-- ===== Sidebar End ======== -->
 
           <!-- ===== Main Content Start ===== -->
-          <main class="w-8/12 h-full overflow-auto">
+          <main class="w-full lg:w-8/12 h-full lg:overflow-auto">
             <!-- ========== Start Hero Section ============ -->
-            <section class="w-full h-[600px] p-12">
+            <section class="w-full p-4 sm:p-12 mb-10">
               <span class="gradient-text font-semibold">INTRODUCTION</span>
-              <h1 class="text-5xl font-semibold leading-tight mb-4 mt-2">
+              <h1 class="text-2xl sm:text-5xl font-semibold leading-tight mb-4 mt-2">
                 I'm a Creative Developer & UI/UX Design Expert
               </h1>
               <b>24 years / Robert Smith / UK London</b>
@@ -245,22 +253,22 @@
             <!-- ========== End Hero Section ============ -->
 
             <!-- ========== Start Resume Section ============ -->
-            <section class="w-full p-12">
-              <h2 class="text-5xl font-semibold">Resume</h2>
+            <section class="w-full p-4 sm:p-12">
+              <h2 class="text-3xl sm:text-5xl font-semibold">Resume</h2>
               <div class="flex flex-col">
                 <h3 class="font-semibold flex gap-3 items-center mt-8">
                   <span
                     class="bg-light-gray w-8 h-8 flex justify-center items-center"
                     ><i class="fa fa-graduation-cap gradient-text"></i
                   ></span>
-                  <span class="text-2xl">Education</span>
+                  <span class="text-xl sm:text-2xl">Education</span>
                 </h3>
                 <div class="mt-8 flex gap-6">
                   <div class="h-full">
                     <img
                       src="./assets/timeline.png"
-                      class="h-[455px] w-[40px]"
-                      alt=""
+                      class="h-[550px] lg:h-[455px]w-[40px]"
+                      alt="timeline"
                     />
                   </div>
                   <div class="flex flex-col gap-8">
@@ -327,14 +335,14 @@
                     class="bg-light-gray w-8 h-8 flex justify-center items-center"
                     ><i class="fa fa-suitcase gradient-text"></i
                   ></span>
-                  <span class="text-2xl">Work History</span>
+                  <span class="text-xl sm:text-2xl">Work History</span>
                 </h3>
                 <div class="mt-8 flex gap-6">
                   <div class="h-full">
                     <img
                       src="./assets/timeline.png"
-                      class="h-[455px] w-[40px]"
-                      alt=""
+                      class="h-[550px] lg:h-[455px] w-[40px]"
+                      alt="timeline"
                     />
                   </div>
                   <div class="flex flex-col gap-8">
@@ -396,56 +404,56 @@
             <!-- ========== End Resume Section ============ -->
 
             <!-- ========== Start Skills Section ========== -->
-            <section class="w-full p-12 mt-10">
-              <h2 class="text-5xl font-semibold">Skills</h2>
+            <section class="w-full p-4 sm:p-12 mt-10">
+              <h2 class="text-3xl sm:text-5xl font-semibold">Skills</h2>
               <div class="flex flex-col gap-y-8 mt-8">
                 <!-- 1 -->
                 <div class="flex flex-col gap-y-2">
                   <div class="flex justify-between">
-                    <h3 class="text-2xl font-medium">UI/UX Design</h3>
-                    <span class="gradient-text text-lg font-semibold">95%</span>
+                    <h3 class="text-lg sm:text-2xl font-medium">UI/UX Design</h3>
+                    <span class="gradient-text text-base sm:text-lg font-semibold">95%</span>
                   </div>
-                  <div class="w-full h-4 bg-primary-dark rounded-full">
+                  <div class="w-full h-2 sm:h-4 bg-primary-dark rounded-full">
                     <div class="w-[95%] h-full bg-primary rounded-full"></div>
                   </div>
                 </div>
                 <!-- 2 -->
                 <div class="flex flex-col gap-y-2">
                   <div class="flex justify-between">
-                    <h3 class="text-2xl font-medium">Photography</h3>
-                    <span class="gradient-text text-lg font-semibold">90%</span>
+                    <h3 class="text-lg sm:text-2xl font-medium">Photography</h3>
+                    <span class="gradient-text text-base sm:text-lg  font-semibold">90%</span>
                   </div>
-                  <div class="w-full h-4 bg-primary-dark rounded-full">
+                  <div class="w-full h-2 sm:h-4 bg-primary-dark rounded-full">
                     <div class="w-[90%] h-full bg-primary rounded-full"></div>
                   </div>
                 </div>
                 <!-- 3 -->
                 <div class="flex flex-col gap-y-2">
                   <div class="flex justify-between">
-                    <h3 class="text-2xl font-medium">Creativity</h3>
-                    <span class="gradient-text text-lg font-semibold">80%</span>
+                    <h3 class="text-lg sm:text-2xl font-medium">Creativity</h3>
+                    <span class="gradient-text text-base sm:text-lg  font-semibold">80%</span>
                   </div>
-                  <div class="w-full h-4 bg-primary-dark rounded-full">
+                  <div class="w-full  h-2 sm:h-4 bg-primary-dark rounded-full">
                     <div class="w-[80%] h-full bg-primary rounded-full"></div>
                   </div>
                 </div>
                 <!-- 4 -->
                 <div class="flex flex-col gap-y-2">
                   <div class="flex justify-between">
-                    <h3 class="text-2xl font-medium">Team Work</h3>
-                    <span class="gradient-text text-lg font-semibold">95%</span>
+                    <h3 class="text-lg sm:text-2xl font-medium">Team Work</h3>
+                    <span class="gradient-text text-base sm:text-lg  font-semibold">95%</span>
                   </div>
-                  <div class="w-full h-4 bg-primary-dark rounded-full">
+                  <div class="w-full  h-2 sm:h-4 bg-primary-dark rounded-full">
                     <div class="w-[95%] h-full bg-primary rounded-full"></div>
                   </div>
                 </div>
                 <!-- 5 -->
                 <div class="flex flex-col gap-y-2">
                   <div class="flex justify-between">
-                    <h3 class="text-2xl font-medium">Web Design</h3>
-                    <span class="gradient-text text-lg font-semibold">95%</span>
+                    <h3 class="text-lg sm:text-2xl font-medium">Web Design</h3>
+                    <span class="gradient-text text-base sm:text-lg  font-semibold">95%</span>
                   </div>
-                  <div class="w-full h-4 bg-primary-dark rounded-full">
+                  <div class="w-full h-2 sm:h-4 bg-primary-dark rounded-full">
                     <div class="w-[95%] h-full bg-primary rounded-full"></div>
                   </div>
                 </div>
@@ -454,17 +462,17 @@
             <!-- ========== End Skills Section ========== -->
 
             <!-- ========== Start Portfolio Section ========== -->
-            <section class="w-full p-12 mt-10">
-              <h2 class="text-5xl font-semibold">Portfolio</h2>
+            <section class="w-full p-4 sm:p-12 mt-10">
+              <h2 class="text-3xl sm:text-5xl font-semibold">Portfolio</h2>
               <!-- bar -->
               <div
-                class="w-full bg-black rounded-sm mt-8 h-16 flex justify-center project_bar_shadow gap-y-6"
+                class="w-full bg-black rounded-sm mt-8 flex justify-center project_bar_shadow flex-wrap"
               >
-                <button class="active_project_bar text-lg px-5">All</button>
-                <button class="text-lg px-5">Graphics Design</button>
-                <button class="text-lg px-5">Mobile App</button>
-                <button class="text-lg px-5">Photography</button>
-                <button class="text-lg px-5">UI/UX Design</button>
+                <button class="active_project_bar text-lg px-3 sm:px-5 py-2 md:py-4">All</button>
+                <button class="text-lg px-3 sm:px-5 py-2 md:py-4">Graphics Design</button>
+                <button class="text-lg px-3 sm:px-5 py-2 md:py-4">Mobile App</button>
+                <button class="text-lg px-3 sm:px-5 py-2 md:py-4">Photography</button>
+                <button class="text-lg px-3 sm:px-5 py-2 md:py-4">UI/UX Design</button>
               </div>
 
               <!-- projects -->
@@ -626,8 +634,8 @@
             <!-- ========== End Portfolio Section ========== -->
 
             <!-- ========== Start Blog Section ========== -->
-            <section class="w-full p-12 mt-10">
-              <h2 class="text-5xl font-semibold">Blog</h2>
+            <section class="w-full p-4 sm:p-12 mt-10">
+              <h2 class="text-3xl sm:text-5xl font-semibold">Blog</h2>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
                 <div class="grid gap-6 row-span-2">
                   <!-- Blog Post 1 -->
@@ -785,9 +793,11 @@
             <!-- ========== End Blog Section ========== -->
 
             <!-- ====== Start Pricing Section ======== -->
-            <section class="w-full p-12 mt-10">
-              <h2 class="text-5xl font-semibold">Pricing</h2>
-              <div class="grid gap-6 justify-between mt-10 grid-cols-2">
+            <section class="w-full p-4 sm:p-12 mt-10">
+              <h2 class="text-3xl sm:text-5xl font-semibold">Pricing</h2>
+              <div
+                class="grid gap-6 justify-between mt-10 grid-cols-1 md:grid-cols-2"
+              >
                 <div
                   class="bg-black shadow-sm rounded-sm p-6 price-badge price-badge-intro"
                 >
@@ -895,8 +905,8 @@
             <!-- ====== End Pricing Section ======== -->
 
             <!-- ====== Start Contact Section ======== -->
-            <section class="w-full p-12 mt-10">
-              <h2 class="text-5xl font-semibold">Contact</h2>
+            <section class="w-full p-4 sm:p-12 mt-10">
+              <h2 class="text-3xl sm:text-5xl font-semibold">Contact</h2>
               <div class="mt-10">
                 <form
                   action=""
@@ -988,17 +998,17 @@
           <!-- ===== Main Content Start ===== -->
         </div>
         <!-- ======= Start Copyright text ======== -->
-        <div class="w-[90px] h-full relative">
+        <div class="w-full sm:w-[90px] sm:h-full absolute bottom-0 sm:relative">
           <div
-            class="flex flex-col justify-between items-center absolute z-10 top-0 w-full h-[600px]"
+            class="flex flex-col justify-between items-center absolute z-10 top-0 w-full sm:h-[600px] bg-deep-dark sm:bg-transparent gap-3 sm:gap-0 py-3 sm:py-0 text-center text-balance"
           >
             <p
-              class="transform rotate-90 whitespace-nowrap text-gray-500 text-sm absolute top-60 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              class="sm:transform sm:rotate-90 sm:whitespace-nowrap text-gray-500 text-sm sm:absolute sm:top-60 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2"
             >
               © Design by themefisher developed by gethugothemes
             </p>
 
-            <div class="flex gap-4 flex-col absolute bottom-10">
+            <div class="flex gap-4 sm:flex-col sm:absolute sm:bottom-10">
               <span
                 class="bg-light-gray w-6 h-6 rounded-full flex justify-center items-center text-xs"
               >
@@ -1011,7 +1021,7 @@
               </span>
             </div>
           </div>
-          <div class="w-full">
+          <div class="w-full hidden sm:block">
             <img
               src="./assets/element-1.png"
               alt="element"
