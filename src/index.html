@@ -56,6 +56,7 @@
           <div class="md:w-8/12 flex justify-between items-center">
             <div class="md:flex items-center ms-10 gap-3 hidden">
               <img src="./assets/home-icon.png" alt="home" class="w-full" />
+
               <h4 class="text-2xl font-bold">Home</h4>
             </div>
             <div
@@ -63,9 +64,13 @@
             >
               <a
                 href="/"
-                class="bg-deep-dark px-3 py-2 md:px-4 rounded-full font-bold cursor-pointer"
+                class="bg-deep-dark hover:bg-transparent transition-all rounded-full font-bold cursor-pointer"
               >
-                <p class="gradient-text text-sm md:text-base">Talk To Me</p>
+                <p
+                  class="gradient-text gradient-text-hover hover:bg-none hover:text-white text-sm md:text-base px-3 py-2 md:px-4"
+                >
+                  Talk To Me
+                </p>
               </a>
             </div>
           </div>
@@ -79,16 +84,15 @@
           <div
             class="h-full flex flex-col pt-12 items-center gap-y-12 absolute z-10 top-0 w-full"
           >
-            <a href="/">
+            <a href="#home">
               <svg
-               class="w-6 h-6 sm:w-8 sm:h-8"
+                class="w-6 h-6 sm:w-8 sm:h-8 fill-[#646464] menu-item active-menu"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M27.662 14.8339L21.9942 9.37709V5.0342C21.9942 4.47477 21.5329 4.01349 20.9735 4.01349C20.414 4.01349 19.9528 4.47477 19.9528 5.0342V7.4142L16.6845 4.26867C16.3263 3.91044 15.7129 3.91044 15.3056 4.26867L4.33306 14.8339C3.92576 15.2412 3.87178 15.8546 4.28399 16.2619C4.6962 16.6692 5.30469 16.7232 5.71199 16.311L5.86412 16.1638V26.9793C5.86412 27.5387 6.32539 28 6.88482 28H25.1593C25.7187 28 26.1309 27.5387 26.18 27.0284V16.2668L26.2831 16.365C27.029 16.8802 27.5589 16.5171 27.7111 16.2619C28.0693 15.8546 28.0693 15.1921 27.662 14.8339ZM17.8083 26.0126H14.2358V20.5508H17.8083V26.0126ZM24.1386 26.0126H19.8006V19.5301C19.8006 18.9707 19.3393 18.5094 18.7799 18.5094H13.2151C12.6557 18.5094 12.1944 18.9707 12.1944 19.5301V26.0126H7.90552V16.0067H24.1386V26.0126ZM8.10181 14.0193L16.0221 6.41313L23.8638 14.0193H8.10181Z"
-                  fill="#646464"
                 />
                 <!-- <defs>
                 <linearGradient
@@ -106,26 +110,24 @@
               </svg>
             </a>
 
-            <a href="">
+            <a href="#about">
               <svg
-             class="w-6 h-6 sm:w-8 sm:h-8"
+                class="w-6 h-6 sm:w-8 sm:h-8 fill-[#646464] menu-item"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M16 16C17.2856 16 18.5423 15.6188 19.6112 14.9046C20.6801 14.1903 21.5132 13.1752 22.0052 11.9874C22.4972 10.7997 22.6259 9.49279 22.3751 8.23191C22.1243 6.97104 21.5052 5.81285 20.5962 4.90381C19.6871 3.99477 18.529 3.3757 17.2681 3.1249C16.0072 2.87409 14.7003 3.00282 13.5126 3.49479C12.3248 3.98676 11.3097 4.81988 10.5954 5.88879C9.88122 6.95771 9.5 8.21442 9.5 9.5C9.5 11.2239 10.1848 12.8772 11.4038 14.0962C12.6228 15.3152 14.2761 16 16 16ZM16 4.85714C16.9183 4.85714 17.8159 5.12944 18.5794 5.63961C19.3429 6.14977 19.938 6.87489 20.2894 7.72326C20.6408 8.57163 20.7328 9.50515 20.5536 10.4058C20.3745 11.3064 19.9323 12.1337 19.283 12.783C18.6337 13.4323 17.8064 13.8745 16.9058 14.0536C16.0051 14.2328 15.0716 14.1408 14.2233 13.7894C13.3749 13.438 12.6498 12.8429 12.1396 12.0794C11.6294 11.3159 11.3571 10.4183 11.3571 9.5C11.3571 8.26864 11.8463 7.08771 12.717 6.21701C13.5877 5.3463 14.7686 4.85714 16 4.85714Z"
-                  fill="#646464"
                 />
                 <path
                   d="M16.9288 17.8574H15.0717C12.3627 17.8574 9.76467 18.9336 7.84912 20.8491C5.93357 22.7647 4.85742 25.3627 4.85742 28.0717C4.85742 28.318 4.95525 28.5542 5.12939 28.7283C5.30354 28.9024 5.53972 29.0003 5.78599 29.0003H26.2146C26.4608 29.0003 26.697 28.9024 26.8712 28.7283C27.0453 28.5542 27.1431 28.318 27.1431 28.0717C27.1431 25.3627 26.067 22.7647 24.1514 20.8491C22.2359 18.9336 19.6378 17.8574 16.9288 17.8574ZM6.77028 27.1431C6.99861 25.1009 7.9714 23.2143 9.50277 21.844C11.0341 20.4736 13.0167 19.7155 15.0717 19.7146H16.9288C18.9838 19.7155 20.9664 20.4736 22.4978 21.844C24.0292 23.2143 25.0019 25.1009 25.2303 27.1431H6.77028Z"
-                  fill="#646464"
                 />
               </svg>
             </a>
-            <a href="">
+            <a href="#skills">
               <svg
-              class="w-6 h-6 sm:w-8 sm:h-8"
+                class="w-6 h-6 sm:w-8 sm:h-8 fill-[#646464] menu-item"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -134,13 +136,12 @@
                   fill-rule="evenodd"
                   clip-rule="evenodd"
                   d="M12.1931 4.08495C11.6099 4.24508 11.0936 4.77092 10.9352 5.36605C10.8289 5.76562 10.8306 6.62242 10.9381 6.83043C11.0885 7.12134 11.4694 7.23375 11.7728 7.07683C12.036 6.94072 12.0716 6.8518 12.1078 6.23905C12.1439 5.62804 12.1999 5.47068 12.424 5.35072C12.6191 5.24636 19.2023 5.24636 19.3974 5.35072C19.6215 5.47068 19.6775 5.62804 19.7137 6.23905C19.7499 6.8518 19.7855 6.94072 20.0487 7.07683C20.3521 7.23375 20.7329 7.12134 20.8833 6.83043C20.991 6.6222 20.9925 5.76545 20.886 5.36496C20.7243 4.75754 20.2099 4.24351 19.6019 4.08169C19.1852 3.97081 12.5983 3.97369 12.1931 4.08495ZM3.59627 8.45837C2.97472 8.55072 2.44117 8.95317 2.16809 9.53575L2.02296 9.84536L2.00665 12.2048C1.99111 14.4595 1.99535 14.5805 2.1027 14.934C2.24446 15.4006 2.66419 15.8837 3.08517 16.0648C3.27655 16.1471 13.1639 18.4063 13.3328 18.4063C13.3404 18.4063 13.3548 18.9138 13.365 19.5342C13.3853 20.7716 13.4014 20.8384 13.717 20.9882C13.972 21.1092 17.8494 21.1092 18.1044 20.9882C18.42 20.8384 18.4362 20.7716 18.4564 19.5342C18.4666 18.9138 18.4811 18.4063 18.4886 18.4063C18.6576 18.4063 28.5449 16.1471 28.7363 16.0648C29.1572 15.8837 29.577 15.4006 29.7187 14.934C29.8261 14.5805 29.8303 14.4595 29.8148 12.2048L29.7985 9.84536L29.6515 9.53173C29.4587 9.12031 29.0446 8.72026 28.6441 8.55855L28.3309 8.43212L16.101 8.42484C9.3745 8.42087 3.74738 8.43593 3.59627 8.45837ZM28.307 9.82052C28.3974 9.88487 28.4865 10.0163 28.5189 10.1331C28.6012 10.4292 28.5885 14.3566 28.5045 14.5963C28.4688 14.6982 28.3784 14.826 28.3037 14.8803C28.214 14.9455 26.5228 15.3466 23.3302 16.0599L18.4926 17.1407L18.4539 16.8115C18.4011 16.3616 18.3237 16.2002 18.1125 16.1C17.8435 15.9724 13.9779 15.9724 13.709 16.1C13.4977 16.2002 13.4203 16.3616 13.3675 16.8115L13.3288 17.1407L8.49123 16.0599C5.29862 15.3466 3.60741 14.9455 3.51773 14.8803C3.44299 14.826 3.35265 14.6982 3.31694 14.5963C3.23497 14.3624 3.21953 10.4276 3.29949 10.1439C3.32895 10.0395 3.42065 9.89917 3.50332 9.83204L3.65361 9.71001L15.9023 9.70974C28.1503 9.70947 28.151 9.70947 28.307 9.82052ZM3.04533 17.3243C2.94988 17.3522 2.82106 17.4463 2.75898 17.5335C2.64674 17.6912 2.64625 17.7131 2.66071 22.1665L2.67522 26.6411L2.81915 26.9481C3.00244 27.339 3.33618 27.6728 3.7271 27.8561L4.0341 28H15.9107H27.7873L28.0943 27.8561C28.4853 27.6728 28.819 27.339 29.0023 26.9481L29.1462 26.6411L29.1607 22.1665C29.1751 17.7238 29.1744 17.6908 29.0633 17.5346C28.9374 17.3579 28.6445 17.2538 28.4068 17.3013C28.2025 17.3421 27.9994 17.55 27.957 17.7616C27.9384 17.8546 27.9231 19.8171 27.923 22.1228C27.9228 26.179 27.9194 26.3206 27.8171 26.4883C27.7461 26.6048 27.6437 26.6805 27.5048 26.719C27.2173 26.7989 4.60635 26.7995 4.31898 26.7197C3.9024 26.604 3.92865 26.8972 3.89821 22.0234C3.86951 17.4326 3.87587 17.5419 3.63019 17.3885C3.48522 17.298 3.23073 17.2701 3.04533 17.3243ZM17.1609 18.5422V19.8195H15.9107H14.6605V18.5422V17.2648H15.9107H17.1609V18.5422Z"
-                  fill="#646464"
                 />
               </svg>
             </a>
-            <a href="">
+            <a href="#portfolio">
               <svg
-              class="w-6 h-6 sm:w-8 sm:h-8"
+                class="w-6 h-6 sm:w-8 sm:h-8 fill-[#646464] menu-item"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -149,13 +150,12 @@
                   fill-rule="evenodd"
                   clip-rule="evenodd"
                   d="M23.5529 4.61882C23.1498 4.97275 22.6878 5.26255 22.5265 5.26298C22.1599 5.26362 12.9659 15.3568 12.7178 16.031C12.3782 16.9531 11.7782 20.4781 11.9046 20.8076C12.0899 21.2905 12.929 21.2124 15.2378 20.4972L17.2994 19.8586L22.0722 14.5854C24.6973 11.6851 26.8449 9.1642 26.8449 8.98359C26.8449 8.80276 27.038 8.40936 27.2739 8.10948C27.8572 7.36793 27.848 5.93352 27.2551 5.17975C26.2078 3.84852 24.6917 3.61879 23.5529 4.61882ZM25.572 5.91336C26.0725 6.18128 26.1197 6.94085 25.6473 7.1221C25.1999 7.29392 24.3843 6.47837 24.5561 6.03091C24.7076 5.636 24.9922 5.60319 25.572 5.91336ZM5.58736 7.86515C3.98156 8.79654 4.00001 8.68156 4.00001 17.7037C4.00001 25.6891 4.00344 25.7533 4.48608 26.5293C5.39173 27.9856 5.48825 28 14.3321 28C21.6356 28 22.2968 27.9695 22.9872 27.6004C24.4334 26.8271 24.5838 26.2782 24.6628 21.4839C24.7012 19.139 24.6769 16.9975 24.6085 16.7256C24.4603 16.135 23.7309 15.8491 23.2953 16.2107C23.0417 16.4212 22.9838 17.277 22.9838 20.8115C22.9838 24.8794 22.9557 25.1893 22.5391 25.7187L22.0947 26.2839H14.3139C6.6764 26.2839 6.52582 26.2756 6.12469 25.8324C5.7388 25.4062 5.71606 24.9523 5.71606 17.7037C5.71606 10.4551 5.7388 10.0012 6.12469 9.57498C6.51445 9.14426 6.73346 9.12345 10.8799 9.12345C13.2705 9.12345 15.3791 9.06489 15.5658 8.99324C16.0132 8.82164 16.0132 7.70921 15.5658 7.5376C15.3791 7.46596 13.2315 7.40954 10.793 7.41233C6.69206 7.41684 6.30166 7.45094 5.58736 7.86515ZM23.8886 8.23582L24.7767 9.06424L20.5018 13.7467C16.3148 18.3328 16.2011 18.4367 14.9744 18.8009L13.7216 19.1726L13.8334 18.7063C13.895 18.4498 14.0112 17.8755 14.0921 17.43C14.2124 16.7661 14.9939 15.789 18.4238 12.0137C20.7255 9.48017 22.697 7.4074 22.8047 7.4074C22.9124 7.4074 23.4002 7.78021 23.8886 8.23582Z"
-                  fill="#646464"
                 />
               </svg>
             </a>
-            <a href="">
+            <a href="#contact">
               <svg
-               class="w-6 h-6 sm:w-8 sm:h-8"
+                class="w-6 h-6 sm:w-8 sm:h-8 fill-[#646464] menu-item"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,6 @@
                   fill-rule="evenodd"
                   clip-rule="evenodd"
                   d="M7.67908 4.03508C7.35982 4.11605 6.34434 4.72735 5.84413 5.13961C4.49794 6.24909 3.52769 7.86716 3.15414 9.62555C2.93772 10.6442 2.95051 12.2479 3.18425 13.3949C3.42264 14.5647 3.76108 15.5378 4.3178 16.6544C4.75389 17.529 7.72064 22.6263 8.17121 23.2751C10.1289 26.094 12.8053 27.8084 15.517 27.9805C17.2304 28.0892 18.7347 27.7442 20.1 26.9293C20.6064 26.627 20.7389 26.5173 20.8848 26.2791C21.0531 26.0042 21.0601 25.9664 21.0561 25.349C21.0525 24.7926 21.0299 24.6465 20.8889 24.2695C20.6531 23.6388 20.3529 23.0636 19.8117 22.2059C19.0049 20.9269 18.5497 20.3974 17.8906 19.9714C17.3857 19.645 17.0019 19.5412 16.4151 19.5721C15.873 19.6007 15.5969 19.71 14.6368 20.2763C14.0573 20.6182 14.0074 20.6363 13.6486 20.6362C13.1784 20.636 12.7365 20.4304 12.354 20.034C12.181 19.8547 11.6264 18.956 10.6988 17.352C9.93152 16.0251 9.25639 14.848 9.19849 14.7361C9.04369 14.4368 9.01091 13.5928 9.14089 13.2525C9.2697 12.9153 9.4384 12.7627 10.1349 12.3538L10.71 12.016L10.804 12.1699C10.9567 12.4197 17.0412 17.1747 17.5095 17.4101C17.8812 17.5969 17.9548 17.6132 18.4118 17.6095C18.815 17.6062 18.9701 17.5776 19.2291 17.4587C19.4304 17.3663 21.1103 16.0855 23.7633 14.0016C26.0813 12.1808 28.0105 10.6711 28.0505 10.6466C28.1084 10.611 28.1231 11.7052 28.1231 16.0432V21.4845L27.9804 21.6272L27.8378 21.7699L24.8268 21.7702C22.8928 21.7704 21.7369 21.7925 21.5949 21.8319C21.1573 21.9534 21.0092 22.4853 21.3171 22.8298L21.4868 23.0197H24.7613C27.9946 23.0197 28.0394 23.0181 28.3077 22.8941C28.6904 22.7172 29.0766 22.3406 29.2221 22.0024L29.346 21.7144L29.3304 15.5658L29.3148 9.41715L29.1557 9.14655C28.9623 8.81759 28.6248 8.54095 28.2371 8.39365C27.958 8.28756 27.6528 8.2836 19.7931 8.2836H11.6388L11.127 7.28085C10.4995 6.05168 10.0907 5.42701 9.52908 4.83908C8.90261 4.18325 8.23632 3.8937 7.67908 4.03508ZM8.33706 5.4262C8.79385 5.75708 9.294 6.46586 9.94326 7.7023C10.4576 8.68168 10.6924 9.35815 10.7002 9.88219C10.7101 10.5612 10.6564 10.6192 9.29609 11.3974C8.42175 11.8976 8.05954 12.3539 7.85771 13.2096C7.74186 13.7009 7.77999 14.5124 7.94037 14.9686C8.04321 15.261 10.7691 20.0247 11.1557 20.5876C11.5201 21.118 12.2602 21.6241 12.9244 21.7971C13.3704 21.9133 14.0367 21.9109 14.3877 21.7918C14.5407 21.7399 15.006 21.5006 15.4216 21.2601C16.3117 20.745 16.5943 20.6807 17.0183 20.8969C17.565 21.1759 18.1577 21.8744 18.9259 23.1451C19.4582 24.0256 19.7408 24.6647 19.831 25.1914C19.9054 25.6255 19.9072 25.6231 19.2061 26.0101C17.546 26.9265 15.2873 27.0112 13.4695 26.2252C11.831 25.5169 10.2848 24.1734 9.11914 22.4452C8.73967 21.8827 5.76356 16.7539 5.43844 16.1022C4.05975 13.3389 3.86176 10.4664 4.90154 8.31267C5.23789 7.61598 5.56504 7.1729 6.23221 6.51062C6.70969 6.03668 7.0118 5.7923 7.39959 5.56641C7.68733 5.39876 7.96461 5.2614 8.01577 5.26122C8.06692 5.26099 8.21149 5.33522 8.33706 5.4262ZM27.3936 9.55597C27.3176 9.62694 19.4489 15.8024 19.067 16.0909C18.7005 16.3676 18.319 16.4372 18.019 16.282C17.9183 16.23 16.4745 15.118 14.8104 13.8109C13.1464 12.5039 11.7338 11.3991 11.6713 11.3559C11.5602 11.2791 11.5617 11.2693 11.7384 10.9165C11.888 10.6177 11.9242 10.4653 11.949 10.03L11.9789 9.50435H19.7139C24.2204 9.50435 27.4257 9.52585 27.3936 9.55597Z"
-                  fill="#646464"
                 />
               </svg>
             </a>
@@ -228,9 +227,11 @@
           <!-- ===== Main Content Start ===== -->
           <main class="w-full lg:w-8/12 h-full lg:overflow-auto">
             <!-- ========== Start Hero Section ============ -->
-            <section class="w-full p-4 sm:p-12 mb-10">
+            <section id="home" class="w-full p-4 sm:p-12 mb-10">
               <span class="gradient-text font-semibold">INTRODUCTION</span>
-              <h1 class="text-2xl sm:text-5xl font-semibold leading-tight mb-4 mt-2">
+              <h1
+                class="text-2xl sm:text-5xl font-semibold leading-tight mb-4 mt-2"
+              >
                 I'm a Creative Developer & UI/UX Design Expert
               </h1>
               <b>24 years / Robert Smith / UK London</b>
@@ -253,7 +254,7 @@
             <!-- ========== End Hero Section ============ -->
 
             <!-- ========== Start Resume Section ============ -->
-            <section class="w-full p-4 sm:p-12">
+            <section id="about" class="w-full p-4 sm:p-12">
               <h2 class="text-3xl sm:text-5xl font-semibold">Resume</h2>
               <div class="flex flex-col">
                 <h3 class="font-semibold flex gap-3 items-center mt-8">
@@ -404,14 +405,19 @@
             <!-- ========== End Resume Section ============ -->
 
             <!-- ========== Start Skills Section ========== -->
-            <section class="w-full p-4 sm:p-12 mt-10">
+            <section id="skills" class="w-full p-4 sm:p-12 mt-10">
               <h2 class="text-3xl sm:text-5xl font-semibold">Skills</h2>
               <div class="flex flex-col gap-y-8 mt-8">
                 <!-- 1 -->
                 <div class="flex flex-col gap-y-2">
                   <div class="flex justify-between">
-                    <h3 class="text-lg sm:text-2xl font-medium">UI/UX Design</h3>
-                    <span class="gradient-text text-base sm:text-lg font-semibold">95%</span>
+                    <h3 class="text-lg sm:text-2xl font-medium">
+                      UI/UX Design
+                    </h3>
+                    <span
+                      class="gradient-text text-base sm:text-lg font-semibold"
+                      >95%</span
+                    >
                   </div>
                   <div class="w-full h-2 sm:h-4 bg-primary-dark rounded-full">
                     <div class="w-[95%] h-full bg-primary rounded-full"></div>
@@ -421,7 +427,10 @@
                 <div class="flex flex-col gap-y-2">
                   <div class="flex justify-between">
                     <h3 class="text-lg sm:text-2xl font-medium">Photography</h3>
-                    <span class="gradient-text text-base sm:text-lg  font-semibold">90%</span>
+                    <span
+                      class="gradient-text text-base sm:text-lg font-semibold"
+                      >90%</span
+                    >
                   </div>
                   <div class="w-full h-2 sm:h-4 bg-primary-dark rounded-full">
                     <div class="w-[90%] h-full bg-primary rounded-full"></div>
@@ -431,9 +440,12 @@
                 <div class="flex flex-col gap-y-2">
                   <div class="flex justify-between">
                     <h3 class="text-lg sm:text-2xl font-medium">Creativity</h3>
-                    <span class="gradient-text text-base sm:text-lg  font-semibold">80%</span>
+                    <span
+                      class="gradient-text text-base sm:text-lg font-semibold"
+                      >80%</span
+                    >
                   </div>
-                  <div class="w-full  h-2 sm:h-4 bg-primary-dark rounded-full">
+                  <div class="w-full h-2 sm:h-4 bg-primary-dark rounded-full">
                     <div class="w-[80%] h-full bg-primary rounded-full"></div>
                   </div>
                 </div>
@@ -441,9 +453,12 @@
                 <div class="flex flex-col gap-y-2">
                   <div class="flex justify-between">
                     <h3 class="text-lg sm:text-2xl font-medium">Team Work</h3>
-                    <span class="gradient-text text-base sm:text-lg  font-semibold">95%</span>
+                    <span
+                      class="gradient-text text-base sm:text-lg font-semibold"
+                      >95%</span
+                    >
                   </div>
-                  <div class="w-full  h-2 sm:h-4 bg-primary-dark rounded-full">
+                  <div class="w-full h-2 sm:h-4 bg-primary-dark rounded-full">
                     <div class="w-[95%] h-full bg-primary rounded-full"></div>
                   </div>
                 </div>
@@ -451,7 +466,10 @@
                 <div class="flex flex-col gap-y-2">
                   <div class="flex justify-between">
                     <h3 class="text-lg sm:text-2xl font-medium">Web Design</h3>
-                    <span class="gradient-text text-base sm:text-lg  font-semibold">95%</span>
+                    <span
+                      class="gradient-text text-base sm:text-lg font-semibold"
+                      >95%</span
+                    >
                   </div>
                   <div class="w-full h-2 sm:h-4 bg-primary-dark rounded-full">
                     <div class="w-[95%] h-full bg-primary rounded-full"></div>
@@ -462,23 +480,48 @@
             <!-- ========== End Skills Section ========== -->
 
             <!-- ========== Start Portfolio Section ========== -->
-            <section class="w-full p-4 sm:p-12 mt-10">
+            <section id="portfolio" class="w-full p-4 sm:p-12 mt-10">
               <h2 class="text-3xl sm:text-5xl font-semibold">Portfolio</h2>
               <!-- bar -->
               <div
                 class="w-full bg-black rounded-sm mt-8 flex justify-center project_bar_shadow flex-wrap"
               >
-                <button class="active_project_bar text-lg px-3 sm:px-5 py-2 md:py-4">All</button>
-                <button class="text-lg px-3 sm:px-5 py-2 md:py-4">Graphics Design</button>
-                <button class="text-lg px-3 sm:px-5 py-2 md:py-4">Mobile App</button>
-                <button class="text-lg px-3 sm:px-5 py-2 md:py-4">Photography</button>
-                <button class="text-lg px-3 sm:px-5 py-2 md:py-4">UI/UX Design</button>
+                <button
+                  class="active_project_bar text-lg px-3 sm:px-5 py-2 md:py-4"
+                  data-category="all"
+                >
+                  All
+                </button>
+                <button
+                  class="text-lg px-3 sm:px-5 py-2 md:py-4"
+                  data-category="graphics"
+                >
+                  Graphics Design
+                </button>
+                <button
+                  class="text-lg px-3 sm:px-5 py-2 md:py-4"
+                  data-category="mobile"
+                >
+                  Mobile App
+                </button>
+                <button
+                  class="text-lg px-3 sm:px-5 py-2 md:py-4"
+                  data-category="photography"
+                >
+                  Photography
+                </button>
+                <button
+                  class="text-lg px-3 sm:px-5 py-2 md:py-4"
+                  data-category="uiux"
+                >
+                  UI/UX Design
+                </button>
               </div>
 
               <!-- projects -->
               <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-7">
                 <div class="grid grid-cols-1 gap-5">
-                  <div class="relative group">
+                  <div class="relative group" data-category="graphics">
                     <img
                       src="./assets/project-1.png"
                       alt="Screenshot of Project 1"
@@ -499,7 +542,7 @@
                       <p class="text-white text-sm">Description of Project 1</p>
                     </div>
                   </div>
-                  <div class="relative group">
+                  <div class="relative group" data-category="mobile">
                     <img
                       src="./assets/project-2.png"
                       alt="Screenshot of Project 2"
@@ -520,7 +563,7 @@
                       <p class="text-white text-sm">Description of Project 2</p>
                     </div>
                   </div>
-                  <div class="relative group">
+                  <div class="relative group" data-category="photography">
                     <img
                       src="./assets/project-3.png"
                       alt="Screenshot of Project 3"
@@ -544,7 +587,7 @@
                 </div>
 
                 <div class="grid grid-cols-1 gap-5">
-                  <div class="relative group">
+                  <div class="relative group" data-category="uiux">
                     <img
                       src="./assets/project-4.png"
                       alt="Screenshot of Project 4"
@@ -565,7 +608,7 @@
                       <p class="text-white text-sm">Description of Project 4</p>
                     </div>
                   </div>
-                  <div class="relative group">
+                  <div class="relative group" data-category="graphics">
                     <img
                       src="./assets/project-5.png"
                       alt="Screenshot of Project 5"
@@ -586,7 +629,7 @@
                       <p class="text-white text-sm">Description of Project 5</p>
                     </div>
                   </div>
-                  <div class="relative group">
+                  <div class="relative group" data-category="mobile">
                     <img
                       src="./assets/project-6.png"
                       alt="Screenshot of Project 6"
@@ -607,7 +650,7 @@
                       <p class="text-white text-sm">Description of Project 6</p>
                     </div>
                   </div>
-                  <div class="relative group">
+                  <div class="relative group" data-category="uiux">
                     <img
                       src="./assets/project-7.png"
                       alt="Screenshot of Project 7"
@@ -631,6 +674,7 @@
                 </div>
               </div>
             </section>
+
             <!-- ========== End Portfolio Section ========== -->
 
             <!-- ========== Start Blog Section ========== -->
@@ -905,7 +949,7 @@
             <!-- ====== End Pricing Section ======== -->
 
             <!-- ====== Start Contact Section ======== -->
-            <section class="w-full p-4 sm:p-12 mt-10">
+            <section id="contact" class="w-full p-4 sm:p-12 mt-10">
               <h2 class="text-3xl sm:text-5xl font-semibold">Contact</h2>
               <div class="mt-10">
                 <form
@@ -1032,5 +1076,7 @@
         <!-- ======= End Copyright text ======== -->
       </div>
     </main>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>
