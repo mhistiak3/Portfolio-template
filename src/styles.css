@@ -83,10 +83,16 @@
   position: relative;
 }
 .price-badge-intro::before {
-  content: "Intro";
+  content: "Intro";  width: 90px;
 }
 .price-badge-base::before {
-  content: "Base";
+  content: "Base";  width: 90px;
+}
+.price-badge-populer::before {
+  content: "Populer";  width: 110px;
+}
+.price-badge-enterprise::before {
+  content: "Enterprise";  width: 120px;
 }
 .price-badge::before {
   background: linear-gradient(
@@ -99,10 +105,17 @@
   left: 0;
   position: absolute;
   top: 46px;
-  width: 90px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   border-radius: 0 50px 50px 0;
+}
+.input-border{
+  border: 0.5px solid rgba(245, 189, 77, 0.406);
+}
+.input-border:focus{
+  border: 0.5px solid #f89222;
+  outline: none;
 }
