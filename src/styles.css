@@ -62,7 +62,7 @@
 }
 
 .blog-btn::before {
- background-color: #f89222;
+  background-color: #f89222;
   content: "";
   height: 1px;
   left: 0;
@@ -71,11 +71,38 @@
   width: 30px;
 }
 .blog-btn::after {
- background-color: #f89222;
+  background-color: #f89222;
   content: "";
   height: 1px;
   right: 0;
   position: absolute;
   top: 12px;
   width: 30px;
+}
+.price-badge {
+  position: relative;
+}
+.price-badge-intro::before {
+  content: "Intro";
+}
+.price-badge-base::before {
+  content: "Base";
+}
+.price-badge::before {
+  background: linear-gradient(
+    89.71deg,
+    rgba(245, 189, 77, 0.3) 0.36%,
+    rgba(248, 146, 34, 0.3) 99.88%
+  );
+
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 46px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 0 50px 50px 0;
 }
